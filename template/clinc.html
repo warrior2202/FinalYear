@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+	<title>Breast Cancer</title>
+    
+</head>
+	<style>
+    #main-footer
+    {
+      color: #FFFFFF;
+      font-family: "Segoe UI";
+      background: #2B2B2B;
+      text-align: center;
+      margin-top: 125px;
+      padding: 16px;
+      bottom: 8px;
+    }</style>
+<body>
+    <header class="site-header">
+  <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+    <div class="container">
+      <a class="navbar-brand mr-4" href="/">Breast Cancer</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggle">
+        <div class="navbar-nav mr-auto">
+
+
+          <a class="nav-item nav-link" href="/BreastCancer_Model1">clinical</a>
+          <a class="nav-item nav-link" href="/BreastCancer_Gene">BreastCancer_Gene</a>
+
+        </div>
+        <!-- Navbar Right Side
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="/login">Login</a>
+          <a class="nav-item nav-link" href="/register">Register</a>
+        </div>-->
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="container",class="form-group">
+        <h2>Clinical Data : </h2>
+    <h2>Welcome</h2>
+    <h3>Enter the Following parameters :</h3>
+  <form action="/result" method="POST">
+    <label for="Age">Age : </label>
+    <input type="text" id="Age" name="Age">
+    <br>
+
+    <label for="Diam">Diam : </label>
+    <input type="text" id="Diam" name="Diam">
+    <br>
+
+    <label for="Posnodes">Posnodes : </label>
+    <input type="text" id="Posnodes" name="Posnodes">
+    <br>
+
+    <label for="Survival">Survival : </label>
+    <input type="text" id="Survival" name="Survival">
+    <br>
+
+    <label for="Timerecurrence">Timerecurrence : </label>
+    <input type="text" id="Timerecurrence" name="Timerecurrence">
+    <br>
+
+    <label for="GRADE">GRADE : </label>
+    <input type="text" id="GRADE" name="GRADE">
+    <br>
+
+    <label for="Angioinv">Angioinv : </label>
+    <input type="text" id="Angioinv" name="Angioinv">
+    <br>
+
+    <label for="Lymphinfil">Lymphinfil : </label>
+    <input type="text" id="Lymphinfil" name="Lymphinfil">
+    
+    <br>
+
+    <label for="Chemo">Chemo : </label>
+    <input type="text" id="Chemo" name="Chemo">
+     
+    <br>
+
+    <label for="Hormonal">Hormonal : </label>
+    <input type="text" id="Hormonal" name="Hormonal">
+     
+    <br>
+
+    <label for="Amputation">Amputation : </label>
+    <input type="text" id="Amputation" name="Amputation">
+    
+    <br>
+
+    <input type="submit" value="Submit"><br><br>
+</form>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<footer id="main-footer">
+      Copyright &copy; 2020
+    </footer>
+</body>
+</html>
