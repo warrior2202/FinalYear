@@ -3,11 +3,10 @@ from flask import Flask,render_template, url_for ,flash , redirect
 import joblib 
 from flask import request
 import numpy as np
-import tensorflow
+
 import os
 from flask import send_from_directory
-from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing import image
+
 import pandas as pd
 import pickle
 
